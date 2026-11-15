@@ -11,6 +11,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scan.mjs
+      - run: node .github/workflows/scan.mjs
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
